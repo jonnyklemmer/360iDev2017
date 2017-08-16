@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="Bob-bL-GsQ">
+            <objects>
+                <viewController id="d31-sy-HST" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tkC-aR-8W1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbS-wX-eX9">
+                                <rect key="frame" x="126" y="365.5" width="123" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="@jonnyklemmer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5U4-My-Rya" kind="presentation" id="bD4-ZN-ZsW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-wL-tLb">
+                                <rect key="frame" x="50.5" y="211.5" width="274" height="124"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="How I Learned To Stop ">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="😥">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="36" name="AppleColorEmoji"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" &amp; ">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="❤️">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="36" name="AppleColorEmoji"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Auto Layout">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47450980390000003" green="0.52941176469999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mbS-wX-eX9" firstAttribute="top" secondItem="G5P-wL-tLb" secondAttribute="bottom" constant="30" id="7J1-3J-xUK"/>
+                            <constraint firstItem="sza-Tl-eqU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G5P-wL-tLb" secondAttribute="trailing" constant="10" id="ARD-VK-1lZ"/>
+                            <constraint firstAttribute="centerY" secondItem="G5P-wL-tLb" secondAttribute="centerY" constant="60" id="Mjs-Cv-pjs"/>
+                            <constraint firstItem="G5P-wL-tLb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sza-Tl-eqU" secondAttribute="leading" constant="10" id="R3i-N5-yWY"/>
+                            <constraint firstItem="G5P-wL-tLb" firstAttribute="centerX" secondItem="sza-Tl-eqU" secondAttribute="centerX" id="gbk-8z-okj"/>
+                            <constraint firstItem="mbS-wX-eX9" firstAttribute="centerX" secondItem="sza-Tl-eqU" secondAttribute="centerX" id="zZ3-2h-ZX5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sza-Tl-eqU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="kFU-KJ-5Gm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4OC-0B-ynO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="-670"/>
+        </scene>
+        <!--StackViews-->
+        <scene sceneID="gz8-f2-zwg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StackViews" id="hyD-qX-O5y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="UIStackViews" image="stack" id="os0-x0-HZW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qc7-Nh-2qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="-168"/>
+        </scene>
+        <!--SizeClasses-->
+        <scene sceneID="5ZH-WM-kz8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SizeClasses" id="DPa-83-rrf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Size Classes" image="phone" id="YNM-jz-udV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgJ-SW-zBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="112"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="n9C-Np-bLL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Web" id="5U4-My-Rya" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSM-FE-EMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="-670"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d31-sy-HST" kind="relationship" relationship="viewControllers" id="Abf-9A-kv3"/>
+                        <segue destination="hyD-qX-O5y" kind="relationship" relationship="viewControllers" id="0ML-63-7tD"/>
+                        <segue destination="DPa-83-rrf" kind="relationship" relationship="viewControllers" id="w7f-Lf-41s"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="-167"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about" width="24" height="24"/>
+        <image name="phone" width="32" height="32"/>
+        <image name="stack" width="32" height="32"/>
+    </resources>
+</document>

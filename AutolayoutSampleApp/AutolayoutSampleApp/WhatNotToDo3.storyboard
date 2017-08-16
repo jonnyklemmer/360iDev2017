@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6v-CY-Dz8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--What Not To Do3 View Controller-->
+        <scene sceneID="xmR-Xl-uHn">
+            <objects>
+                <viewController id="E6v-CY-Dz8" customClass="WhatNotToDo3ViewController" customModule="AutolayoutSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aLy-wo-bYN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-8k-H7f" userLabel="Gray View">
+                                <rect key="frame" x="16" y="50" width="343" height="587"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmX-5h-J15" userLabel="Red View">
+                                        <rect key="frame" x="51" y="229.5" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.16862745100000001" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RedView"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" identifier="RedViewWidth" id="EUc-ey-VMp"/>
+                                            <constraint firstAttribute="width" secondItem="zmX-5h-J15" secondAttribute="height" multiplier="15:8" id="XwZ-Sj-tZi"/>
+                                            <constraint firstAttribute="height" constant="128" identifier="RedViewHeight" id="tYS-Nw-dSK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GrayView"/>
+                                <constraints>
+                                    <constraint firstItem="zmX-5h-J15" firstAttribute="top" secondItem="Jgg-8k-H7f" secondAttribute="top" constant="229.5" id="5Cg-hY-lpY"/>
+                                    <constraint firstItem="zmX-5h-J15" firstAttribute="centerX" secondItem="Jgg-8k-H7f" secondAttribute="centerX" id="7fT-lq-jKh"/>
+                                    <constraint firstAttribute="bottom" secondItem="zmX-5h-J15" secondAttribute="bottom" constant="229.5" id="8b7-Bn-DJ2"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="zmX-5h-J15" secondAttribute="trailing" constant="44" identifier="RedViewTrailing" id="Rh4-tN-Yvh"/>
+                                    <constraint firstItem="zmX-5h-J15" firstAttribute="centerY" secondItem="Jgg-8k-H7f" secondAttribute="centerY" identifier="RedViewCenterY" id="rMp-wB-Cyk"/>
+                                    <constraint firstItem="zmX-5h-J15" firstAttribute="leading" secondItem="Jgg-8k-H7f" secondAttribute="leadingMargin" constant="43" identifier="RedViewLeading" id="tHk-pV-SpO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6hB-t0-aWU" firstAttribute="bottom" secondItem="Jgg-8k-H7f" secondAttribute="bottom" constant="30" identifier="GrayViewBottom" id="Khq-H0-410"/>
+                            <constraint firstItem="Jgg-8k-H7f" firstAttribute="leading" secondItem="6hB-t0-aWU" secondAttribute="leading" constant="16" identifier="GrayViewLeading" id="UCg-ab-Dug"/>
+                            <constraint firstItem="6hB-t0-aWU" firstAttribute="trailing" secondItem="Jgg-8k-H7f" secondAttribute="trailing" constant="16" identifier="GrayViewTrailing" id="cCu-sK-ThU"/>
+                            <constraint firstItem="Jgg-8k-H7f" firstAttribute="top" secondItem="6hB-t0-aWU" secondAttribute="top" constant="30" identifier="GrayViewTop" id="fL0-sg-brj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6hB-t0-aWU"/>
+                    </view>
+                    <connections>
+                        <outlet property="widthConstraint" destination="EUc-ey-VMp" id="UK5-je-b90"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpT-xm-eD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>

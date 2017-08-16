@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lgh-QI-H8v">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Size Classes-->
+        <scene sceneID="ZIJ-OT-uOp">
+            <objects>
+                <viewController id="Lgh-QI-H8v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WON-Aq-20b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="mountains" translatesAutoresizingMaskIntoConstraints="NO" id="KcR-z9-zSq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1eP-kh-BgP">
+                                        <variation key="heightClass=compact" constant="125"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pOf-nd-moI">
+                                <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ff5-OB-zcs" userLabel="View1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.64313725489999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="layer.shadowOffset">
+                                                <point key="value" x="1" y="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qAm-9o-os4" userLabel="View2">
+                                        <rect key="frame" x="0.0" y="159" width="375" height="149"/>
+                                        <color key="backgroundColor" red="0.47450980390000003" green="0.52941176469999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="layer.shadowOffset">
+                                                <point key="value" x="1" y="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="vsc-lO-SsX" userLabel="View3">
+                                        <rect key="frame" x="0.0" y="318" width="375" height="149"/>
+                                        <color key="backgroundColor" red="0.14901960780000001" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="layer.shadowOffset">
+                                                <point key="value" x="1" y="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KcR-z9-zSq" firstAttribute="top" secondItem="WON-Aq-20b" secondAttribute="top" id="4f3-lH-eNi"/>
+                            <constraint firstItem="KcR-z9-zSq" firstAttribute="leading" secondItem="Eix-Vc-lip" secondAttribute="leading" id="8b2-wK-PEI"/>
+                            <constraint firstItem="KcR-z9-zSq" firstAttribute="trailing" secondItem="Eix-Vc-lip" secondAttribute="trailing" id="B8j-eQ-tnI"/>
+                            <constraint firstItem="pOf-nd-moI" firstAttribute="leading" secondItem="Eix-Vc-lip" secondAttribute="leading" id="Sq5-5B-EMa"/>
+                            <constraint firstItem="pOf-nd-moI" firstAttribute="top" secondItem="KcR-z9-zSq" secondAttribute="bottom" id="crP-s8-acj"/>
+                            <constraint firstItem="Eix-Vc-lip" firstAttribute="trailing" secondItem="pOf-nd-moI" secondAttribute="trailing" id="hsy-YC-VCX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="pOf-nd-moI" secondAttribute="bottom" id="jd2-Xc-HyH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eix-Vc-lip"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Size Classes" image="phone" id="8bx-TG-2ab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Njb-6S-73b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307.24637681159425" y="462.22826086956525"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mountains" width="4958" height="1878"/>
+        <image name="phone" width="32" height="32"/>
+    </resources>
+</document>
